@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var MovieManagementApp_1 = require("./MovieManagementApp");
+var Movie_1 = require("./Movie");
+var obj = new MovieManagementApp_1.MovieManagementApp();
+console.log(obj.movieList);
+var mov = new Movie_1.Movie();
+mov.director = "trivikram";
+mov.producer = "James cameroon";
+mov.heroName = "mahesh Babu";
+mov.heroine = "trisha";
+mov.title = "Athadu";
+mov.movieId = 12;
+obj.movieList.push(mov);
+console.log(obj.movieList);
+var mo = obj.movieList[0];
+console.log(obj.display(mo));
